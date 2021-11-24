@@ -1,0 +1,115 @@
+/* navbar */
+body {
+    height: 1500px;
+}
+.navbar-brand{
+    font-family: Lexend, sans-serif;
+    font-size: 28px;
+}
+
+.navbar-nav {
+    font-size: 28px;
+}
+
+.tombol {
+    text-transform: uppercase;
+    border-radius: 80px;
+}
+
+.jumbotron {
+    background-image: url(img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 60px;
+    font-weight: 200px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+/* info panel */
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    background-color: white;
+    margin-top: -100px;
+    padding: 30px;
+}
+
+.info-panel img{
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.imfo-panel h4{
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+/* working space */
+.workingspace {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.workingspace h1{
+    font-size: 49px;
+    text-transform: uppercase; 
+}
+
+.workingspace p {
+    font-size: 20px;
+    color: #acacac;
+    font-weight: 200px;
+    margin-top: 30px;
+}
+
+.workingspace a {
+    margin-top: 30px;
+}
+
+
+/* desktop version */
+@media (min-width: 992px) { 
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        color: white;
+        text-align: center;
+        margin-top: 150px;
+        font-weight: 200px;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    }
+
+    .jumbotron .display-4 {
+        font-weight: 500px;
+    }
+
+    .workingspace {
+        text-align: left;
+    }
+}
